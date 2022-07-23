@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Header from "./1-header/Header";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
 };
 
 export default Home;
