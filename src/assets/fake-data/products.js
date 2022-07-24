@@ -1,14 +1,10 @@
 import pizzaImg01 from "../images/pizza1.png";
-
 import fastFood03 from "../images/chicken3.png";
 import fastFood04 from "../images/chicken4.png";
-
 import dessert02 from "../images/dessert02.png";
 import dessert03 from "../images/dessert2.png";
 import dessert04 from "../images/dessert3.png";
-
 import coffeeImg02 from "../images/coffe2.png";
-
 import salad from "../images/slider2.png";
 
 export const popularMenuFood = [
