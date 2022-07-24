@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./header.css";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const navLink = [
   { display: "Home", url: "#" },
@@ -11,13 +11,16 @@ const navLink = [
 ];
 
 const Header = () => {
+  const menuRef = useRef();
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+
   return (
-    <div className="header">
+    <div className="header ">
       <Container>
-        <div className="navigation d-flex align-items-center justify-content-between">
+        <div className="navigation d-flex align-items-center justify-content-between ">
           {/* LOGO */}
           <div className="logo">
-            <h2 className="d-flex align-item-center gap-1">
+            <h2 className="d-flex align-item-center">
               <span>
                 <i class="ri-restaurant-2-line"></i>
               </span>
@@ -26,30 +29,41 @@ const Header = () => {
           </div>
 
           {/* NavBar Center */}
-          <div className="nav__menu">
-            <div className="nav__list d-flex align-items-center mb-0">
-              {navLink.map((item, index) => (
-                <li className="nav__item " key={index}>
-                  <a href={item.url}>{item.display}</a>
-                </li>
-              ))}
+          <div className="nav__menu" ref={menuRef}>
+            <div className="nav__list__wrapper d-flex align-items-center gap-5 ">
+              <ul className="nav__list d-flex">
+                {navLink.map((item, index) => (
+                  <li className="nav__item" key={index}>
+                    <a href={item.url} onClick={menuToggle}>
+                      {item.display}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Right Menu */}
+              <div className="menu__right">
+                <div className="custom__search d-flex align-items-center ">
+                  <input placeholder="Search item ..." />
+                  <span>
+                    <i class="ri-search-line"></i>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Right Menu */}
-          <div className="menu__right">
-            <div className="custom__search">
-              <input type="text" placeholder="Search item ..." />
-              <span>
-                <i class="ri-search-line"></i>
-              </span>
-            </div>
+          <div>
+            <span className="cart__icon">
+              <i class="ri-shopping-cart-2-fill"></i>
+              <span className="badge">2</span>
+            </span>
           </div>
 
           {/* Mobile  Only */}
           <div className="mobile__menu">
             <span>
-              <i class="ri-menu-line"></i>
+              <i class="ri-menu-line" onClick={menuToggle}></i>
             </span>
           </div>
         </div>
