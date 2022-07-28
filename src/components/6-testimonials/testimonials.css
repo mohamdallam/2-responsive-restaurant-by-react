@@ -33,3 +33,20 @@ color: rgb(255 255 255);
   width: 100%;
   transform: translate(30%, 50%);
 }
+
+@media only screen and (max-width: 992px) {
+  .slider__content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider__wrapper {
+    flex-direction: column;
+  }
+
+  .slider__content {
+    width: 90% !important;
+  }
+}

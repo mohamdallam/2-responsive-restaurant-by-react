@@ -10,3 +10,28 @@
 .btn:hover {
   color: #f76e11;
 }
+
+.wwwwwww {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .slider__content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* .slider__content {
+    text-align: center;
+  } */
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none !important;
+  }
+}

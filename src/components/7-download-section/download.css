@@ -48,3 +48,34 @@
 .btn__google:hover a {
   color: #0a071a;
 }
+
+@media only screen and (max-width: 992px) {
+  .app__img img {
+    width: 100%;
+  }
+
+  .app__content h5 {
+    font-size: 1rem;
+  }
+
+  .app__content h2 {
+    font-size: 1.5rem;
+  }
+
+  .app__content p {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  .btn__apple,
+  .btn__google {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app__content {
+    padding: 30px;
+  }
+}

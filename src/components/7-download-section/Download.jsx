@@ -8,13 +8,13 @@ const Download = () => {
     <section>
       <Container>
         <Row className="app__container">
-          <Col lg="6" md="6">
+          <Col lg="6" md="6" sm="12" xs="12">
             <div className="app__img">
               <img src={appImage} className="img-fluid" alt="" />
             </div>
           </Col>
 
-          <Col lg="6" md="6" className="app__content pt-5">
+          <Col lg="6" md="6" sm="12" xs="12" className="app__content pt-5">
             <div>
               <h5>Download our app</h5>
               <h2>

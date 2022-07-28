@@ -9,11 +9,11 @@ const ChooseUs = () => {
     <section>
       <Container>
         <Row>
-          <Col lg="6">
-            <img src={pasta} alt="img" />
+          <Col lg="6" md="6">
+            <img src={pasta} alt="" className="img-fluid" />
           </Col>
 
-          <Col lg="6">
+          <Col lg="6" md="6">
             <div className="choose__content">
               <h4>Who we are?</h4>
               <h2>Take a look at the benefits we offfer you</h2>

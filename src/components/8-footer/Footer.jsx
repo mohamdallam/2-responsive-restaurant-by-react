@@ -21,6 +21,7 @@ const Footer = () => {
     <div className="footer">
       <Container>
         <Row>
+          {/* 1 Col */}
           <Col lg="4" md="4" sm="6">
             <div className="logo">
               <h2 className="d-flex align-item-center gap-1 mb-4">
@@ -37,6 +38,7 @@ const Footer = () => {
             </div>
           </Col>
 
+          {/* 2 Col */}
           <Col lg="3" md="4" sm="6">
             <h5 className="footer__link-title">Info Link</h5>
             <ListGroup>
@@ -48,6 +50,7 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
+          {/* 3 Col */}
           <Col lg="2" md="4" sm="6">
             <h5 className="footer__link-title">Quick Links </h5>
             <ListGroup>
@@ -59,6 +62,7 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
+          {/* 4 Col */}
           <Col lg="3" md="4" sm="6">
             <h5 className="footer__link-title">Contact</h5>
             <ListGroup>

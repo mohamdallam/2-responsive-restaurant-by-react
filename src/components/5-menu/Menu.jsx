@@ -44,6 +44,7 @@ const Menu = () => {
             <h3 className="menu__title">Our Menu Pack</h3>
           </Col>
 
+          {/* Button */}
           <Col lg="12" className="text-center mb-5">
             <button
               className={`filter-btn ${
@@ -91,8 +92,9 @@ const Menu = () => {
             </button>
           </Col>
 
+          {/* Images */}
           {products.map((e) => (
-            <Col lg="3" key={e.id} className="mb-3">
+            <Col lg="3" md="4" sm="6" xs="6" key={e.id} className="mb-3">
               <ProductCard Item={e} />
             </Col>
           ))}
