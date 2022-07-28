@@ -10,5 +10,26 @@
 
 .slick-prev:before,
 .slick-next:before {
-  display: none !important;
+  /* display: none !important; */
+}
+
+/* font-family: 'slick';
+font-size: 20px;
+line-height: 1;
+opacity: .75;
+color: rgb(255 255 255);
+-webkit-font-smoothing: antialiased; */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /* top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%); */
+  top: 90%;
+  width: 100%;
+  transform: translate(30%, 50%);
 }

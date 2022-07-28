@@ -5,6 +5,8 @@ import PopularMenu from "./3-popular-menu/PopularMenu";
 import ChooseUs from "./4-choose-us/ChooseUs";
 import Menu from "./5-menu/Menu";
 import Testimonials from "./6-testimonials/Testimonials";
+import Download from "./7-download-section/Download";
+import Footer from "./8-footer/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <ChooseUs />
       <Menu />
       <Testimonials />
+      <Download />
+      <Footer />
     </Fragment>
   );
 };
