@@ -3,7 +3,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 import { sliderData } from "../../assets/fake-data/slider";
-import Carousel from "react-bootstrap/Carousel";
 
 const HeroSlider = () => {
   const settings = {
@@ -13,7 +12,6 @@ const HeroSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // variableWidth: true,
   };
 
   return (

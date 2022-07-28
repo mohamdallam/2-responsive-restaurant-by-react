@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="header ">
       <Container>
-        <div className="navigation d-flex align-items-center justify-content-between ">
+        <div className="navigation d-flex align-items-center justify-content-between pt-3">
           {/* LOGO */}
           <div className="logo">
             <h2 className="d-flex align-item-center">

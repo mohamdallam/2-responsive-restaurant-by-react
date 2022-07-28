@@ -21,7 +21,7 @@ const Testimonials = () => {
             <div className="slider__wrapper d-flex align-items-center gap-5">
               <div className="slider__content w-50">
                 <h2>What our customers are saying</h2>
-                {/* <Slider {...settings}>
+                <Slider {...settings}>
                   <div>
                     <div className="single__testimonial">
                       <p className="review__content">
@@ -51,10 +51,10 @@ const Testimonials = () => {
                       <p>Full Stack Developer</p>
                     </div>
                   </div>
-                </Slider> */}
+                </Slider>
               </div>
 
-              <div className="slider__img w-50 d-sm-none .d-md-block">
+              <div className="slider__img w-50 d-sm-none d-md-block">
                 <img src={testmonImage} alt="img" className="img-fluid" />
               </div>
             </div>
